@@ -91,7 +91,7 @@ No additional installation is required.
 
 Computer Engineering Graduate | Frontend Developer
 
-GitHub: https://github.com/your-username
+GitHub: https://github.com/gowdapooja555
 
 ---
 
