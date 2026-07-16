@@ -55,43 +55,6 @@ Job-Hunt-Pro/
 └── README.md
 ```
 
----
-
-## 📸 Screenshots
-
-### Home Page
-
-_Add a screenshot here_
-
-```
-images/home-page.png
-```
-
-### Jobs Page
-
-_Add a screenshot here_
-
-```
-images/jobs-page.png
-```
-
-### Companies Page
-
-_Add a screenshot here_
-
-```
-images/companies-page.png
-```
-
-### Saved Jobs
-
-_Add a screenshot here_
-
-```
-images/saved-jobs.png
-```
-
----
 
 ## ▶️ How to Run the Project
 
