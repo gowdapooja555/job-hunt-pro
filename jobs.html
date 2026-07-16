@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Browse Jobs | JobHunt</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<header>
+
+<nav class="navbar">
+
+<div class="logo">
+
+<i class="fa-solid fa-briefcase"></i>
+
+<span>JobHunt</span>
+
+</div>
+
+<ul class="nav-links">
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="jobs.html" class="active">Jobs</a></li>
+
+<li><a href="companies.html">Companies</a></li>
+
+<li><a href="about.html">About</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+<div class="nav-buttons">
+
+<a href="login.html">
+    <button class="login-btn">Login</button>
+</a>
+
+<a href="signup.html">
+    <button class="signup-btn">Sign Up</button>
+</a>
+<button id="themeBtn" class="theme-btn">
+    🌙
+</button>
+
+</div>
+<li><a href="saved-jobs.html">Saved Jobs</a></li>
+
+</nav>
+
+</header>
+
+<section class="jobs-header">
+
+<h1>Find Your Next Opportunity</h1>
+
+<p>
+
+Browse verified jobs from India's leading companies.
+
+</p>
+
+</section>
+
+<section class="filter-section">
+
+<input
+id="searchInput"
+type="text"
+placeholder="Search jobs...">
+
+<select id="locationFilter">
+
+<option value="All">All Locations</option>
+
+<option value="Mumbai">Mumbai</option>
+
+<option value="Pune">Pune</option>
+
+<option value="Bangalore">Bangalore</option>
+
+<option value="Delhi">Delhi</option>
+
+<option value="Mumbai">Mumbai</option>
+<option value="Pune">Pune</option>
+<option value="Bangalore">Bangalore</option>
+<option value="Delhi">Delhi</option>
+<option value="Chennai">Chennai</option>
+<option value="Hyderabad">Hyderabad</option>
+<option value="Noida">Noida</option>
+
+
+
+</select>
+
+<select id="typeFilter">
+
+    <option value="All">All Types</option>
+
+    <option value="Full Time">Full Time</option>
+
+    <option value="Remote">Remote</option>
+
+    <option value="Hybrid">Hybrid</option>
+
+    <option value="Internship">Internship</option>
+
+</select>
+
+<select id="sortFilter">
+
+    <option value="default">Sort By</option>
+
+    <option value="salaryLow">Salary (Low to High)</option>
+
+    <option value="salaryHigh">Salary (High to Low)</option>
+
+    <option value="company">Company (A-Z)</option>
+
+</select>
+
+<select id="companyFilter">
+
+    
+    <option value="All">All Companies</option>
+<option value="Google">Google</option>
+<option value="Adobe">Adobe</option>
+<option value="Amazon">Amazon</option>
+<option value="Microsoft">Microsoft</option>
+<option value="Infosys">Infosys</option>
+<option value="TCS">TCS</option>
+<option value="Wipro">Wipro</option>
+<option value="Accenture">Accenture</option>
+<option value="Capgemini">Capgemini</option>
+<option value="Cognizant">Cognizant</option>
+<option value="Zoho">Zoho</option>
+<option value="Flipkart">Flipkart</option>
+<option value="Paytm">Paytm</option>
+<option value="IBM">IBM</option>
+<option value="Oracle">Oracle</option>
+<option value="Tech Mahindra">Tech Mahindra</option>
+<option value="LTIMindtree">LTIMindtree</option>
+<option value="Deloitte">Deloitte</option>
+<option value="Reliance Jio">Reliance Jio</option>
+
+</select>
+</section>
+
+
+<p class="job-count" id="jobCount"></p>
+
+<section class="job-list" id="jobList">
+
+</section>
+
+
+<div class="modal" id="jobModal">
+    
+
+    <div class="modal-content">
+
+        <span class="close-btn">&times;</span>
+
+        <h2 id="modalTitle"></h2>
+
+        <h3 id="modalCompany"></h3>
+
+        <p id="modalLocation"></p>
+
+        <p id="modalSalary"></p>
+
+        <p id="modalType"></p>
+
+        <p id="modalExperience"></p>
+
+        <p id="modalSkills"></p>
+
+        <p id="modalDescription"></p>
+
+    </div>
+
+</div>
+    <div class="apply-modal" id="applyModal">
+
+    <div class="apply-content">
+
+        <span class="close-apply">&times;</span>
+
+        <h2>Apply for Job</h2>
+
+        <form id="applyForm">
+
+            <input
+                type="text"
+                id="applicantName"
+                placeholder="Enter your name"
+                required>
+
+            <input
+                type="email"
+                id="applicantEmail"
+                placeholder="Enter your email"
+                required>
+
+            <input
+                type="url"
+                id="resumeLink"
+                placeholder="Resume Link (Google Drive / Portfolio)"
+                required>
+
+            <button type="submit">
+                Submit Application
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+
+<div id="toast"></div>
+    <script src="js/jobs.js"></script>
+
+</body>
+
+</html>

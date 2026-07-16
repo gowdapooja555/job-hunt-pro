@@ -1,0 +1,414 @@
+/* =====================================
+   TABLETS (1024px and below)
+===================================== */
+
+@media (max-width:1024px){
+
+    .navbar{
+
+        padding:0 5%;
+    }
+
+    .hero{
+
+        padding:60px 5%;
+    }
+
+    .hero-left h1{
+
+        font-size:48px;
+
+        line-height:60px;
+    }
+
+    .hero-info{
+
+        gap:30px;
+    }
+
+}
+
+
+/* =====================================
+   TABLETS (768px and below)
+===================================== */
+
+@media (max-width:768px){
+
+    .navbar{
+
+        flex-direction:column;
+
+        height:auto;
+
+        padding:20px;
+    }
+
+    .nav-links{
+
+        margin:20px 0;
+
+        gap:20px;
+
+        flex-wrap:wrap;
+
+        justify-content:center;
+    }
+
+    .nav-buttons{
+
+        margin-bottom:10px;
+    }
+
+    .hero{
+
+        flex-direction:column-reverse;
+
+        text-align:center;
+    }
+
+    .hero-left{
+
+        width:100%;
+    }
+
+    .hero-right{
+
+        width:90%;
+    }
+
+    .hero-left h1{
+
+        font-size:42px;
+
+        line-height:55px;
+    }
+
+    .search-box{
+
+        flex-direction:column;
+    }
+
+    .input-box{
+
+        width:100%;
+    }
+
+    .search-btn{
+
+        width:100%;
+    }
+
+    .hero-info{
+
+        justify-content:center;
+
+        flex-wrap:wrap;
+    }
+
+}
+
+
+/* =====================================
+   MOBILE (576px and below)
+===================================== */
+
+@media (max-width:576px){
+
+    .logo{
+
+        font-size:24px;
+    }
+
+    .nav-links{
+
+        flex-direction:column;
+
+        align-items:center;
+
+        gap:15px;
+    }
+
+    .nav-buttons{
+
+        flex-direction:column;
+
+        width:100%;
+    }
+
+    .login-btn,
+    .signup-btn{
+
+        width:100%;
+    }
+
+    .hero{
+
+        padding:40px 20px;
+    }
+
+    .hero-left h1{
+
+        font-size:34px;
+
+        line-height:45px;
+    }
+
+    .hero-left p{
+
+        font-size:15px;
+
+        line-height:26px;
+    }
+
+    .tag{
+
+        font-size:13px;
+    }
+
+    .hero-info{
+
+        gap:20px;
+    }
+
+    .hero-info h3{
+
+        font-size:24px;
+    }
+
+}
+/* =========================================
+   JOBS PAGE
+========================================= */
+
+.jobs-header{
+
+    text-align:center;
+
+    padding:70px 8% 30px;
+
+}
+
+.jobs-header h1{
+
+    font-size:46px;
+
+    margin-bottom:15px;
+
+    color:#222;
+
+}
+
+.jobs-header p{
+
+    color:#666;
+
+    font-size:17px;
+
+}
+
+/* =========================================
+   FILTER SECTION
+========================================= */
+
+.filter-section{
+
+    width:84%;
+
+    margin:30px auto;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+.filter-section input,
+.filter-section select{
+
+    width:320px;
+
+    padding:15px 18px;
+
+    border:1px solid #ddd;
+
+    border-radius:10px;
+
+    outline:none;
+
+    font-size:15px;
+
+    transition:.3s;
+
+}
+
+.filter-section input:focus,
+.filter-section select:focus{
+
+    border-color:#2563eb;
+
+}
+
+/* =========================================
+   JOB LIST
+========================================= */
+
+.job-list{
+
+    width:84%;
+
+    margin:50px auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(330px,1fr));
+
+    gap:30px;
+
+}
+
+.job-card{
+
+    background:#fff;
+
+    padding:25px;
+
+    border-radius:15px;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+    position:relative;
+
+}
+
+.job-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+/* =========================================
+   JOB TYPE
+========================================= */
+
+.job-type{
+
+    position:absolute;
+
+    right:20px;
+
+    top:20px;
+
+    background:#2563eb;
+
+    color:white;
+
+    padding:6px 12px;
+
+    border-radius:20px;
+
+    font-size:13px;
+
+}
+
+.job-card h2{
+
+    margin-top:25px;
+
+    margin-bottom:12px;
+
+    font-size:24px;
+
+}
+
+.job-card h4{
+
+    color:#2563eb;
+
+    margin-bottom:15px;
+
+}
+
+.job-card p{
+
+    margin-bottom:10px;
+
+    color:#555;
+
+}
+
+.job-card i{
+
+    margin-right:8px;
+
+}
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+.job-buttons{
+
+    display:flex;
+
+    gap:12px;
+
+    margin-top:25px;
+
+}
+
+.apply-btn{
+
+    flex:1;
+
+    background:#2563eb;
+
+    color:white;
+
+    border:none;
+
+    padding:13px;
+
+    border-radius:8px;
+
+    transition:.3s;
+
+}
+
+.apply-btn:hover{
+
+    background:#1d4ed8;
+
+}
+
+.save-btn{
+
+    flex:1;
+
+    background:white;
+
+    color:#2563eb;
+
+    border:2px solid #2563eb;
+
+    padding:13px;
+
+    border-radius:8px;
+
+    transition:.3s;
+
+}
+
+.save-btn:hover{
+
+    background:#2563eb;
+
+    color:white;
+
+}
